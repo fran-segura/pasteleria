@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Pastelería de ejemplo</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="theme-color"
+          content="#FFFFFF"
+          media="(prefers-color-scheme: light)">
+    <meta name="theme-color"
+          content="#FFFFFF"
+          media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:title" content="Mi blog">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css@v1.7/symbiosis.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- owlcarousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Hojas de estilo CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="all and (max-width: 700px)">
+    <link rel="stylesheet" type="text/css" href="css/desktop.css" media="all and (min-width: 701px)">
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.5.0/dist/ffnm.min.js" integrity="sha384-qlI8XJcMcJMh52x4w9HA9ItB8KmW6pKaJXijVQFl6UvT1nGCH+U6Y7sbbc11HkCH" crossorigin="anonymous"></script>
+    <!--  JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- owlcarousel JS -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                items: 2,
+                loop: true,
+                autoplay: false,
+                nav: true,
+                autoplayTimeout: 3000,
+                dots: true,
+                dotsEach: true,
+                margin: 20,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:4
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<!-- Header MOBILE -->
+<header class="header">
+    <div class="header__container-mobile">
+        <div class="header__logo">
+            <a href="index.html" class="header__logo-link">
+                <img src="img/Logo.png" alt="Logotipo" class="logotipo">
+            </a>
+            <button class="header__button-nav--open" is-click="class:add('nav--show', '#nav')">
+                <img src="img/icons/menu.png" alt="abrir menú" class="header__button-nav-img">
+            </button>
+        </div>
+        <nav id="nav" class="header__nav-mobile">
+            <div class="nav__button">
+                <div class="header__logo--menu">
+                    <a href="index.html" class="header__logo-link">
+                        <img src="img/Logo.png" alt="Logotipo" class="header__nav-item--img">
+                    </a>
+                </div>
+                <button class="header__button-nav--close" is-click="class:remove('nav--show', '#nav')">
+                    <img src="img/icons/close.png" alt="cerrar menú" class="header__button-nav-img">
+                </button>
+            </div>
+            <div class="header__nav-section">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Conócenos
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Contacta
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            Reservas
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__nav-icons--right">
+                <li class="header__nav-li header__nav-icons--right--li">
+                    <a href="#" class="header__nav-item">
+                        <img src="img/icons/cart.png" alt="Carrito" class="header__nav-item--img-logo">
+                    </a>
+                </li>
+                <li class="header__nav-li header__nav-icons--right--li">
+                    <a href="#" class="header__nav-item">
+                        <img src="img/icons/profile.png" alt="Perfil" class="header__nav-item--img-logo">
+                    </a>
+                </li>
+            </div>
+        </nav>
+    </div>
+<!-- Header DESKTOP -->
+    <nav class="header__nav">
+         <ul class="header__nav-ul">
+             <li class="header__nav-li">
+                 <a href="#" class="header__nav-item">Home</a>
+             </li>
+             <li class="header__nav-li">
+                 <a href="#" class="header__nav-item">Conócenos</a>
+             </li>
+             <li class="header__nav-li">
+                 <img src="img/Logo.png" alt="Logo" class="header__nav-item--img"/>
+             </li>
+             <li class="header__nav-li">
+                 <a href="#" class="header__nav-item">Contacta</a>
+             </li>
+             <li class="header__nav-li">
+                 <a href="#" class="header__nav-item">Reservas</a>
+             </li>
+             <div class="header__nav-icons--right">
+                 <li class="header__nav-li header__nav-icons--right--li">
+                     <a href="#" class="header__nav-item">
+                         <img src="img/icons/cart.png" alt="Carrito" class="header__nav-item--img">
+                     </a>
+                 </li>
+                 <li class="header__nav-li header__nav-icons--right--li">
+                     <a href="#" class="header__nav-item">
+                         <img src="img/icons/profile.png" alt="Perfil" class="header__nav-item--img">
+                     </a>
+                 </li>
+             </div>
+         </ul>
+    </nav>
+</header>
+<!-- Slider -->
+    <main>
+        <div class="container">
+            <section class="slider">
+                <div class="slider__container">
+                    <h1 class="slider__title">Los pasteles más ricos de Valencia</h1>
+                    <p class="slider__text">Cada día elaboramos pasteles de forma tradicional, para que te transporten a tus recuerdos más dulces en cada bocado.</p>
+                    <div class="slider__buttons">
+                        <a href="#" class="slider__button--menu">
+                            <p class="slider__button--menu--text-menu">Ver la carta</p>
+                        </a>
+                        <a href="#" class="slider__button--order">
+                            <p class="slider__button--menu--text-order">Conócenos</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+<!-- Section 1 Experience -->
+            <section class="experience-intro">
+                <div class="experience-intro__col1">
+                    <img src="img/bakery9.jpg" alt="Panes y harinas" class="experience-intro__img">
+                </div>
+                <div class="experience-intro__col2">
+                    <h2 class="experience-intro__title">Nuestro saber hacer</h2>
+                    <p class="experience-intro__text">En nuestro horno, trabajamos desde muy temprano, elaborando pasteles para endulzar cualquier ocasión especial en tu vida y en la de tus seres queridos.</p>
+                    <a href="#" class="experience-intro__link">Saber más &rarr;</a>
+                </div>
+            </section>
+<!-- Section 3 Carrusel -->
+            <section class="carrusel__container">
+                <h2 class="carrusel__title">Compra ahora tus dulces</h2>
+                <p class="carrusel__text">Navega por la sección más dulce de la web y elige aquellos pecados dulces que más te apetezcan para ti o para compartir.</p>
+                <div class="owl-carousel">
+                    <div class="carrusel-producto__item">
+                        <img class="carrusel-producto__img" src="img/bakery13.jpg" alt="imagen1">
+                        <h3 class="carrusel-producto__title">Minibocaditos variados</h3>
+                        <p class="carrusel-producto__text">
+                            <span class="carrusel-producto__price">2&euro;</span> / unidad</p>
+                        <a class="carrusel-producto__link">Añadir al carrito</a>
+                    </div>
+                    <div class="carrusel-producto__item">
+                        <img class="carrusel-producto__img" src="img/bakery17.jpg" alt="imagen2">
+                        <h3 class="carrusel-producto__title">Sandwiches vegetales</h3>
+                        <p class="carrusel-producto__text">
+                            <span class="carrusel-producto__price">2&euro;</span> / sandwich</p>
+                        <a class="carrusel-producto__link">Añadir al carrito</a>
+                    </div>
+                    <div class="carrusel-producto__item">
+                        <img class="carrusel-producto__img" src="img/bakery10.jpg" alt="imagen3">
+                        <h3 class="carrusel-producto__title">Tarta deliciosa</h3>
+                        <p class="carrusel-producto__text">
+                            <span class="carrusel-producto__price">20&euro;</span> / tarta</p>
+                        <a class="carrusel-producto__link">Añadir al carrito</a>
+                    </div>
+                    <div class="carrusel-producto__item">
+                        <img class="carrusel-producto__img" src="img/bakery20.jpg" alt="imagen4">
+                        <h3 class="carrusel-producto__title">Pastel de calabaza</h3>
+                        <p class="carrusel-producto__text">
+                            <span class="carrusel-producto__price">12&euro;</span> / pastel</p>
+                        <a class="carrusel-producto__link">Añadir al carrito</a>
+                    </div>
+                    <div class="carrusel-producto__item">
+                        <img class="carrusel-producto__img" src="img/bakery19.jpg" alt="imagen5">
+                        <h3 class="carrusel-producto__title">Galletas con nueces</h3>
+                        <p class="carrusel-producto__text">
+                            <span class="carrusel-producto__price">1&euro;</span> / unidad</p>
+                        <a class="carrusel-producto__link">Añadir al carrito</a>
+                    </div>
+                    <div class="carrusel-producto__item">
+                        <img class="carrusel-producto__img" src="img/bakery16.jpg" alt="imagen6">
+                        <h3 class="carrusel-producto__title">Bocata prosciutto</h3>
+                        <p class="carrusel-producto__text">
+                            <span class="carrusel-producto__price">5&euro;</span> / bocata</p>
+                        <a class="carrusel-producto__link">Añadir al carrito</a>
+                    </div>
+                </div>
+            </section>
+<!-- Section 4 Hero Recetas -->
+            <section class="hero-recetas">
+                <div class="hero-recetas__container">
+                    <img class="hero-recetas__img" src="/img/bakery18.jpg" alt="Pasteles" />
+                    <div class="hero-recetas__center">
+                        <h1 class="hero-recetas__title">Te ofrecemos productos bajos en azúcar</h1>
+                        <p class="hero-recetas__text">Porque darse un capricho dulce no debería estar reñido con las dietas o con problemas de salud, te presentamos nuestra sección de productos bajos en azúcar.</p>
+                        <a href="#" class="hero-recetas__link">Quiero saber más &rarr;</a>
+                    </div>
+                </div>
+            </section>
+<!-- Section 5 Contacta -->
+            <section class="contact-home">
+                <div class="contact-home__col1">
+                    <h2 class="contact-home__title">Contacta con nosotros</h2>
+                    <p class="contact-home__text">Estamos listos para preparar los mejores pasteles, pero también atentos a lo que tengas que contarnos, somos todo oídos</p>
+                    <a href="#" class="contact-home__link">Contactar ahora &rarr;</a>
+                </div>
+                <div class="contact-home__col2">
+                    <img src="img/bakery7.jpg" alt="Panes y harinas" class="contact-home__img">
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__col1">
+            <img src="img/Logo.png" alt="Logotipo" class="footer__logo-img">
+        </div>
+        <div class="footer__col2">
+            <h5 class="footer__title">Pastelería</h5>
+                <ul class="footer__ul">
+                    <li class="footer__li">
+                        <a href="#" class="footer__item">Home</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="#" class="footer__item">Conócenos</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="#" class="footer__item">Contacta</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="#" class="footer__item">Reservas</a>
+                    </li>
+                </ul>
+        </div>
+        <div class="footer__col3">
+            <h5 class="footer__title">Tienda pastelería</h5>
+                <ul class="footer__ul">
+                    <li class="footer__li">
+                        <a href="#" class="footer__item">Carrito</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="#" class="footer__item">Mi cuenta</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="#" class="footer__item">Pedidos previos</a>
+                    </li>
+                </ul>
+        </div>
+        <div class="footer__col4">
+            <h5 class="footer__title">Síguenos</h5>
+            <ul class="footer__ul-icons">
+                <li class="footer__li">
+                    <a href="#" class="footer__item">
+                        <img src="img/icons/fb--white.png" alt="FB" class="footer__img">
+                    </a>
+                </li>
+                <li class="footer__li">
+                    <a href="#" class="footer__item">
+                        <img src="img/icons/tw--white.png" alt="TW" class="footer__img">
+                    </a>
+                </li>
+                <li class="footer__li">
+                    <a href="#" class="footer__item">
+                        <img src="img/icons/li--white.png" alt="LI" class="footer__img">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

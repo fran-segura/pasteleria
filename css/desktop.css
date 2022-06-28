@@ -1,0 +1,144 @@
+/* Header DESKTOP */
+
+.header__container-mobile {
+    display: none;
+}
+
+.header__nav {
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: var(--color-blanco);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    z-index: 999;
+}
+
+.header__nav-ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-li {
+    text-align: center;
+}
+
+.header__nav-item {
+    font-weight: bold;
+    transition: .3s ease-in-out;
+}
+
+.header__nav-item:hover {
+    color: var(--color-marron);
+}
+
+.header__nav-icons--right {
+    display: flex;
+    gap: 1rem;
+}
+
+.header__nav-icons--right--li {
+    width: 2rem;
+}
+
+/* FIN Header DESKTOP */
+
+/* Section 1 Experience */
+
+.experience-intro {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.experience-intro__col1 {
+    display: flex;
+    justify-content: right;
+    max-width: 36rem;
+}
+
+.experience-intro__col2 {
+    margin-left: 1rem;
+    margin-right: 3rem;
+}
+
+/* FIN Section 1 Experience */
+
+/* Section 3 Carrusel */
+
+.carrusel__container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+/* FIN Section 3 Carrusel */
+
+/* Section 5 Contacta */
+
+.contact-home {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.contact-home__col1 {
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+
+.contact-home__col2 {
+    display: flex;
+    justify-content: left;
+    max-width: 36rem;
+}
+
+/* FIN Section 5 Contacta */
+
+/* Section Footer */
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--color-marron);
+    color: var(--color-blanco);
+    padding: 3rem 2rem;
+}
+
+.footer__ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__li {
+    margin-bottom: 1rem;
+}
+
+.footer__item {
+    color: var(--color-blanco);
+}
+
+.footer__title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer__img {
+    max-width: 2rem;
+}
+
+.footer__ul-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__logo-img {
+    max-width: 8rem;
+    text-align: center;
+}
+
+/* Fin Section Footer */

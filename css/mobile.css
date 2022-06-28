@@ -1,0 +1,223 @@
+/* Header MOBILE */
+
+.header__nav {
+    display: none;
+}
+
+.nav--show {
+    z-index: 100;
+}
+
+.header__container-mobile {
+    height: 6rem;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 999;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.logotipo {
+    width: 8rem;
+}
+
+.header__button-nav--open, .header__button-nav--close {
+    background-color: var(--color-blanco);
+    border: none;
+}
+
+.header__button-nav-img {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.header__nav-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+.header__nav-mobile {
+    background-color: var(--color-blanco);
+    transform: translate(100vw);
+    transition: 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav--show {
+    transform: translate(0vw);
+    width: 100vw;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+}
+
+.nav__button {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.header__logo--menu {
+    opacity: 1;
+}
+
+.header__nav-item--img {
+    width: 8rem;
+    margin: 1rem;
+}
+
+.header__button-nav--close {
+    margin: 1.5rem 2rem;
+}
+
+.header__nav-section {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-blanco);
+}
+
+.header__nav-list {
+    justify-content: center;
+    padding-left: 0;
+}
+
+.header__nav-item {
+    list-style: none;
+    margin: 1rem 0 1rem 0;
+}
+
+.header__nav-link {
+    display: flex;
+    align-items: center;
+    font-family: "IBM", sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.header__nav-icons--right {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    justify-content: center;
+    padding-bottom: 3rem;
+    background-color: var(--color-blanco);
+}
+
+.nav__contact {
+    background-color: var(--color-blanco);
+    height: 100%;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+.nav__contact-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fin Header MOBILE */
+
+/* Section 1 Experience */
+
+.experience-intro {
+    flex-direction: column-reverse;
+}
+
+.experience-intro__col1 {
+    display: flex;
+    justify-content: center;
+}
+
+.experience-intro__col2 {
+    margin-bottom: 3rem;
+}
+
+/* Fin Section 1 Experience */
+
+/* Section 1 Experience */
+
+.contact-home {
+    flex-direction: column;
+}
+
+.contact-home__col1 {
+    margin-bottom: 3rem;
+}
+
+.contact-home__col2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Fin Section 1 Experience */
+
+/* Section 4 Hero Recetas */
+
+.hero-recetas__center {
+    width: 90%;
+}
+
+/* Fin Section 4 Hero Recetas */
+
+/* Section Footer */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--color-marron);
+    color: var(--color-blanco);
+    padding: 3rem 2rem;
+}
+
+.footer__ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__li {
+    margin-bottom: .5rem;
+}
+
+.footer__item {
+    color: var(--color-blanco);
+}
+
+.footer__title {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    margin-top: 2rem;
+}
+
+.footer__img {
+    max-width: 3rem;
+}
+
+.footer__ul-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__logo-img {
+    max-width: 8rem;
+}
+
+/* Fin Section Footer */

@@ -1,0 +1,242 @@
+/* Slider */
+
+.slider {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/bakery4.jpg");
+    height: 100vh;
+}
+
+.slider__container {
+    padding: 3rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.slider__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.slider__title,
+.slider__text,
+.slider__button--menu,
+.slider__button--order {
+    color: var(--color-blanco);
+}
+
+.slider__button--menu--text-menu,
+.slider__button--menu--text-order {
+    border: .2rem solid var(--color-blanco);
+    border-radius: 2rem;
+    padding: .8rem;
+    width: 10rem;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.slider__button--menu--text-order {
+    background-color: var(--color-blanco);
+    color: var(--color-marron);
+}
+
+.slider__button--menu--text-menu:hover,
+.slider__button--menu--text-order:hover {
+    background-color: var(--color-marron);
+    color: var(--color-blanco);
+    border: .2rem solid var(--color-marron);
+}
+
+/* Fin Slider */
+
+/* Section 1 Experience */
+
+.experience-intro {
+    display: flex;
+    margin: 3rem;
+}
+
+.experience-intro__text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.experience-intro__link {
+    margin-top: 1rem;
+    color: var(--color-marron);
+    font-weight: bold;
+}
+
+.experience-intro__link:hover {
+    text-decoration: underline;
+}
+
+.experience-intro__col2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.experience-intro__img {
+    width: 75%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+/* Fin Section 1 Experience */
+
+/* Section 3 Carrusel */
+
+.carrusel__text {
+    margin-bottom: 2rem;
+}
+
+.carrusel__container {
+    padding: 3rem;
+    background-color: #dcd8d3;
+}
+
+.carrusel-producto__item {
+    background-color: var(--color-blanco);
+    border-radius: 2rem;
+    padding-bottom: 2rem;
+}
+
+.carrusel-producto__img {
+    border-radius: 2rem 2rem 0 0;
+}
+
+.carrusel-producto__title, .carrusel-producto__text {
+    padding-left: 2rem;
+}
+
+.carrusel-producto__price {
+    color: var(--color-marron);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.carrusel-producto__link {
+    color: var(--color-marron);
+    text-transform: uppercase;
+    font-family: "Poppins";
+    border: 2px solid;
+    border-color: var(--color-marron);
+    border-radius: 2rem;
+    display: block;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.carrusel-producto__link:hover, .owl-prev>span:hover, .owl-next>span:hover {
+    color: var(--color-blanco);
+    background-color: var(--color-marron);
+}
+
+.carrusel-producto__title {
+    padding-top: 1rem;
+}
+
+.owl-nav {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.owl-prev>span, .owl-next>span {
+    color: var(--color-marron);
+    background-color: var(--color-blanco);
+    border: none;
+    border-radius: 3rem;
+    width: 52px;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    transition: .3s ease-in-out;
+}
+
+/* Fin Section 3 Carrusel */
+
+/* Section 4 Hero Recetas */
+
+.hero-recetas__container {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 70vh;
+}
+
+.hero-recetas__center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-recetas__img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.hero-recetas__text {
+    margin-bottom: 2rem;
+}
+
+.hero-recetas__link {
+    color: var(--color-blanco);
+    font-weight: bold;
+}
+
+.hero-recetas__link:hover {
+    text-decoration: underline;
+}
+
+/* Fin Section 4 Hero Recetas */
+
+/* Section 5 Contacta */
+
+.contact-home {
+    display: flex;
+    margin: 3rem;
+}
+
+.contact-home__text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-home__link {
+    margin-top: 1rem;
+    color: var(--color-marron);
+    font-weight: bold;
+}
+
+.contact-home__link:hover {
+    text-decoration: underline;
+}
+
+.contact-home__col1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-home__img {
+    width: 75%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+/* Fin Section 5 Contacta */
